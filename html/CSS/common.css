@@ -1,0 +1,265 @@
+/* 清除默认样式的代码 */
+/* 去除常见标签默认的 margin 和 padding */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+input {
+  margin: 0;
+  padding: 0;
+}
+
+/* 內减模式 */
+* {
+    box-sizing: border-box;
+}
+
+/* 设置网页统一的字体大小、行高、字体系列相关属性 */
+body {
+  font: 16px/1.5 "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei",
+    "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+  color: #333;
+  background-color: #f5f5f5;
+}
+
+/* 去除列表默认样式 */
+ul,
+ol {
+  list-style: none;
+}
+
+/* 去除默认的倾斜效果 */
+em,
+i {
+  font-style: normal;
+}
+
+/* 去除a标签默认下划线，并设置默认文字颜色 */
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* 设置img的垂直对齐方式为居中对齐，去除img默认下间隙 */
+img {
+  vertical-align: middle;
+}
+
+/* 去除input默认样式 */
+input {
+  border: none;
+  outline: none;
+  color: #333;
+}
+
+/* 左浮动 */
+.fl {
+  float: left;
+}
+
+/* 右浮动 */
+.fr {
+  float: right;
+}
+
+/* 双伪元素清除法 */
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+}
+.clearfix::after {
+  clear: both;
+}
+
+/* 快捷菜单 */
+
+.shortcut .wrapper{
+    height: 60px;
+    border-bottom: 1px solid #f1f1f1;
+    background-color: #fff;
+}
+.shortcut .wrapper ul{
+    float: left;
+    margin-left: 68px;
+}
+
+.shortcut .wrapper ul li {
+    float: left;
+    line-height: 57px;
+    margin-right: 25px;
+}
+.shortcut .wrapper ul li a{
+    display: block;
+    font-size: 14px;
+    /* margin-right: 25px; */
+    /* line-height: 60px; */
+
+}
+.wrapper img{
+    height: 22px;
+    width: 107px;
+}
+/* 鼠标移动字体变化 */
+.wrapper ul li a:hover{
+    color: #7ca4ff;
+    border-bottom: 3px solid #7ca4ff;
+
+}
+
+/* 文章分类 */
+.header{
+  background-color: #fff;
+    /* width: 100%; */
+    height: 45px;
+    border-top: 1px solid #f1f1f1;
+    border-bottom: 2px solid #f1f1f1;
+}
+.header .nav{
+    width: 960px;
+    height: 45px;
+    margin: 0 auto;
+}
+.header .nav ul{
+    float: left;
+}
+.header .nav ul li {
+    float: left;
+    font-size: 14px;
+    margin-right: 25px;
+}
+.header .nav ul li a{
+    line-height: 45px;
+}
+.header .nav ul li a:hover{
+    color: #7ca4ff;
+}
+/* 文章部分 */
+.box{
+  width: 960px;
+  margin: 0 auto;
+  margin-top: 25px;
+  overflow:hidden;
+}
+.box .Essay{
+  background-color: #fff;
+  width: 700px;
+  float: left;
+}
+.box .Essay .Tbr{
+  padding-left: 12px;
+  width: 700px;
+  height: 46px;
+  border-bottom: 1px solid #f2f2f2;
+}
+.box .Essay .Tbr ul{
+  float: left;
+}
+.box .Essay .Tbr ul li {
+  float: left;
+  line-height: 46px;
+}
+.box .Essay .Tbr ul li a{
+  padding: 0 12px;
+  font-size: 14px;
+  border-left: 1px solid #eaeaea;
+}
+.box .Essay .Tbr ul li a:hover{
+  color: #7ca4ff;
+}
+.tj{
+  border: 0px !important;
+}
+
+/* 内容部分 */
+.Content{
+  height: 320px;
+}
+
+/* 广告部分 */
+.ad{
+  width: 240px;
+  float: right;
+}
+.ad .adImages img{
+  height: 200px;
+  width: 240px;
+  margin-bottom: 15px;
+}
+/* 下载app */
+.app{
+
+  width: 240px;
+  height: 74px;
+  background-color: #fff;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #f1f1f1;
+}
+
+.app img{
+  width: 50px;
+  height: 50px;
+}
+.appmanage{
+  float: right;
+  width: 144px;
+  height: 48px;
+}
+.appmanage .appTitle{
+  font-size: 14px;
+}
+.appContent{
+  font-size: 12px;
+  color: #86909c;
+  margin-top: 6px;
+}
+
+/* 作者榜 */
+.authorList{
+  height: 295px;
+  background-color: #fff;
+  border: 1px solid #f1f1f1;
+}
+.authorList header{
+  padding: 12px 15px;
+  border-bottom: 1px solid #f1f1f1;
+}
+.authorList .author{
+  height: 70px;
+  padding: 12px 15px;
+}
+
+.author img{
+  height: 45px;
+  width: 45px;
+  border-radius: 100%;
+}
+.author .information{
+  display: inline-block;
+  vertical-align:middle; /*使文字与图片对齐 */
+  
+}
+.author .information span{
+  font-size: 14px;
+}
+.author .information img{
+  width: 35px;
+  height: 16px;
+}
+.author .information .aboutTheAuthor{
+  width: 157px;
+  height: 15.48px;
+  font-size: 12px;
+  overflow: hidden; /* 多余部分隐藏  */
+}
